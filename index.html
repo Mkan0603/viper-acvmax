@@ -2,27 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=Inventory%20List%20-%20Later.dc.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ACV MAX — New Car Pricing Campaign Prototype</title>
+<title>Viper — Now, Next, Later</title>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: Roboto, Arial, sans-serif; background: #eef0f2; color: #1c1d1f; display: flex; min-height: 100vh; align-items: center; justify-content: center; padding: 40px 20px; }
-  .wrap { width: 100%; max-width: 480px; text-align: center; }
-  .brand { display: flex; align-items: baseline; justify-content: center; gap: 10px; margin-bottom: 16px; }
-  .brand .acv { font-size: 34px; font-weight: 800; color: #3b4f7d; letter-spacing: -0.5px; }
-  .brand .max { font-size: 20px; font-weight: 300; letter-spacing: 6px; color: #f26522; }
-  p { color: #5b6370; font-size: 14px; margin: 0 0 22px; }
-  a.cta { display: inline-block; text-decoration: none; background: #1D3864; color: #fff; border-radius: 8px; padding: 13px 30px; font-size: 15px; font-weight: 600; }
-  footer { margin-top: 26px; font-size: 12px; color: #9aa0aa; }
+  body { margin: 0; font-family: -apple-system, Segoe UI, Roboto, sans-serif; background: #f0ede8; color: #1c1d1f; }
+  header { background: #3b4f7d; color: #fff; padding: 32px 40px; }
+  header h1 { margin: 0 0 6px; font-size: 26px; }
+  header p { margin: 0; opacity: .8; font-size: 14px; }
+  main { max-width: 1000px; margin: 0 auto; padding: 32px 40px 64px; }
+  .group { margin-bottom: 36px; }
+  .group h2 { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: #6b7280; margin: 0 0 14px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  a.card { display: block; background: #fff; border: 1px solid #e4e2dc; border-radius: 10px; padding: 16px 18px; text-decoration: none; color: #1c1d1f; box-shadow: 0 1px 2px rgba(0,0,0,.06); transition: box-shadow .15s, transform .15s; }
+  a.card:hover { box-shadow: 0 6px 18px rgba(0,0,0,.12); transform: translateY(-2px); }
+  a.card .name { font-weight: 600; font-size: 15px; }
+  a.card .desc { font-size: 12.5px; color: #6b7280; margin-top: 4px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 2px 8px; border-radius: 9999px; margin-bottom: 8px; }
+  .now { background: #eef2ff; color: #3b4f7d; }
+  .next { background: #fff4ec; color: #b45309; }
+  .later { background: #fef2f2; color: #b91c1c; }
+  .other { background: #f1f5f9; color: #475569; }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="brand"><span class="acv">ACV</span><span class="max">MAX</span></div>
-    <p>New Car Pricing Campaign — Interactive Prototype. Redirecting…</p>
-    <a class="cta" href="Inventory%20List%20-%20Later.dc.html">Open Prototype</a>
-    <footer>Prototype Creator: Margaux Kan</footer>
+<header>
+  <h1>Viper — Now, Next, Later</h1>
+  <p>ACV MAX appraisal prototype · entry points for each version + supporting pages</p>
+</header>
+<main>
+
+  <div class="group">
+    <h2>Version: Now — baseline appraisal flow</h2>
+    <div class="cards">
+      <a class="card" href="MVP Phase 1.html"><span class="badge now">Now</span><div class="name">Appraisals Dashboard</div><div class="desc">Landing page for the Now version</div></a>
+    </div>
   </div>
+
+  <div class="group">
+    <h2>Version: Next — unified Viper worklist</h2>
+    <div class="cards">
+      <a class="card" href="MVP1 Appraisals.html"><span class="badge next">Next</span><div class="name">Appraisals Dashboard</div><div class="desc">Landing page for the Next version</div></a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Version: Later — dedicated Viper workspace</h2>
+    <div class="cards">
+      <a class="card" href="Viper Hub.html"><span class="badge later">Later</span><div class="name">Viper Hub</div><div class="desc">Landing page for the Later version</div></a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Shared appraisal flow pages</h2>
+    <div class="cards">
+      <a class="card" href="Add Appraisal.html"><span class="badge other">Shared</span><div class="name">Add Appraisal</div><div class="desc">Intake / odometer verification</div></a>
+      <a class="card" href="Appraisal Detail.html"><span class="badge other">Shared</span><div class="name">Appraisal Detail</div><div class="desc">ACV MAX pricing &amp; condition</div></a>
+      <a class="card" href="Condition Disclosure.html"><span class="badge other">Shared</span><div class="name">Condition Disclosure</div><div class="desc">Update vehicle condition</div></a>
+      <a class="card" href="Photos.html"><span class="badge other">Shared</span><div class="name">Photos</div><div class="desc">Appraisal photo viewer</div></a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Viper inspection &amp; offer pages</h2>
+    <div class="cards">
+      <a class="card" href="Viper Vehicle Summary.html"><span class="badge other">Viper</span><div class="name">Viper Vehicle Summary</div><div class="desc">Inspection detail / scan results</div></a>
+      <a class="card" href="Viper Inspection Edit.html"><span class="badge other">Viper</span><div class="name">Viper Inspection Edit</div><div class="desc">Edit VIN, vehicle info &amp; photos</div></a>
+      <a class="card" href="Viper Condition Report Edit.html"><span class="badge other">Viper</span><div class="name">Viper Condition Report Edit</div><div class="desc">Edit condition report answers</div></a>
+      <a class="card" href="Viper Customer Offer.html"><span class="badge other">Viper</span><div class="name">Viper Customer Offer</div><div class="desc">Create / generate customer offer</div></a>
+      <a class="card" href="Viper Offer Sheet.html"><span class="badge other">Viper</span><div class="name">Viper Offer Sheet</div><div class="desc">Branded offer PDF recreation</div></a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Settings</h2>
+    <div class="cards">
+      <a class="card" href="ACV MAX Settings.html"><span class="badge other">Settings</span><div class="name">ACV MAX Settings</div><div class="desc">Top-level settings landing</div></a>
+      <a class="card" href="PitStop Appraisal Settings.html"><span class="badge other">Settings</span><div class="name">PitStop Appraisal Settings</div><div class="desc">Viper toggles nested in appraisal config (Next)</div></a>
+      <a class="card" href="PitStop Viper Settings.html"><span class="badge other">Settings</span><div class="name">PitStop Viper Settings</div><div class="desc">Standalone Viper preferences (Later)</div></a>
+    </div>
+  </div>
+
+</main>
 </body>
 </html>
